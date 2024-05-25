@@ -1,0 +1,385 @@
+*{
+    margin:0;
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-image: url(/images/backgroundcodigos.png);
+    background-color: #000000f8;
+    width: 100vw;
+}
+section{
+    width: 100vw;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.active{
+    border-bottom: solid 3px orange;
+}
+
+.animate{
+    max-width: 480px;
+    text-align: center;
+
+}
+.animate:after{
+ content: '|';
+ margin-left: 5px;
+ opacity: 1;
+ animation: pisca .7s infinite;
+}
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+
+.menubar{
+    width: 100%;
+    display: flex;
+    margin-block: 40px;
+    padding:0;
+    font-size: 30px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    list-style: none;
+    justify-content: center;
+    gap:50px;
+}
+
+a{
+    justify-content: center;
+    text-decoration: none;
+}
+.perfil{
+    width: 50%;
+
+}
+
+.perfil img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    position: relative
+}
+
+.midias{
+    display: flex;
+    height: max-content;
+    width: 50%;
+    justify-content: center;
+
+}
+.bordatorta{
+    width: 465px;
+    height: 525px;
+    border-radius: 20px;
+    border: solid orange 4px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ladoesquerdo{
+    width: 50%;
+    padding-inline: 50px;
+    
+}
+
+h1{
+
+    font-size: 40px;
+    font-family: "Chakra Petch", sans-serif;
+    color: orange;
+    padding: 0;
+    width: max-content;
+}
+
+p{
+    width: 100%;
+    font-size: 25px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+
+    font-family: "Rajdhani", sans-serif;
+}
+
+
+.apresentacao{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+
+}
+
+
+footer{
+    border-top: solid rgb(255, 132, 0) 3px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    
+}
+
+footer #aluraicon{
+    margin-top: 40px;
+    height: 65px;
+}
+
+footer .assinatura{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+h2{
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    font-family:"Chakra Petch", sans-serif;
+    font-weight: 200;
+}
+ul2{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+ul2 li2{
+
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-bottom:30px;
+
+}
+ul2 li2 a{
+
+    display: flex;
+    border: 2px solid rgb(255, 255, 255);
+    color: orange;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    background:rgba(92, 79, 236, 0.1);
+    text-decoration: none;
+    border-radius: 15px;
+    font-family:"Chakra Petch", sans-serif;
+}
+
+.tecnologias img{
+    
+        width: 425px;
+        height: 425px;
+        border-radius: 400px;
+        position: relative;
+    
+}
+.bordaredonda{
+    width: 425px;
+    height: 425px;
+    border-radius: 400px;
+    border: solid rgb(253, 236, 204) 4px;
+    position: absolute;
+    background: rgb(0, 0, 92);
+    z-index: -1;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.certificados{
+    margin-top: 30px;
+}
+.apresentacaoprojeto{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding-inline: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.osprojetos{
+    border: solid rgba(255, 255, 255, 0.337) 2px;
+    background:rgba(92, 79, 236, 0.1);
+    display: flex;
+    justify-content: center;
+    text-align:start;
+    height: max-content;
+    border-radius: 10px;
+}
+.descprojetos{
+    display: flex;
+
+    
+}
+.myprojects{
+    display: flex; 
+    padding: 20px;
+}
+
+
+.midiasprojetos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 100px;
+    height: 400px;
+    width: max-content;
+
+    
+}
+
+.projetosimg{
+
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+
+}
+.projetosimg img{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    border-radius: 10px;
+    border: solid rgba(255, 255, 255, 0.337) 2px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.bordaprojetotorta1{
+    width: 405px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 1040px;
+    border: solid orange 4px;
+    position: absolute;
+    z-index: -1;
+}
+.bordaprojetotorta2{
+    width: 405px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 60px;
+    border: solid orange 4px;
+    position: absolute;
+    z-index: -1;
+    margin-left: 20px;
+
+}
+
+.bordaprojetotorta3{
+    width: 405px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 960px;
+    border: solid orange 4px;
+    position: absolute;
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+    .facet_sidebar {
+      display: none;
+    }
+
+    .perfil{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .perfil img{
+        width: 80%;
+    }
+
+
+    ul2 li2{
+        width: 100%;
+        margin: 0;
+    }
+    ul2{
+        margin:0;
+        width: 100%;
+        gap: 20px;
+    }
+    ul2 li2 a{
+        margin: 0;
+    }
+
+    .ladoesquerdo{
+        width: 100vw;
+        padding-inline: 20px;
+    }
+
+    p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .bordatorta{
+        width: 80%;
+        height: 335px;
+
+    }
+
+    .midias{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .apresentacao{
+        gap: 30px; 
+        padding-bottom: 60px;
+    }
+
+    .projetosimg{
+        width: 80%;
+        height: auto;
+    }
+    .projetosimg img{
+        width: 100%;
+
+    }
+  }
