@@ -453,6 +453,8 @@ ul2 li2 a{
         position: absolute;
         z-index: -1;
     }
-
+    .descprojetos{
+        padding-bottom: 20px;
+    }
     
   }
