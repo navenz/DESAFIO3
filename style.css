@@ -13,6 +13,11 @@ body{
     background-image: url(/images/backgroundcodigos.png);
     background-color: #000000f8;
     width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 section{
     width: 100vw;
@@ -24,7 +29,7 @@ header{
 }
 
 .active{
-    border-bottom: solid 3px orange;
+    border-bottom: solid 4px #0c3a56;
 }
 
 .animate{
@@ -68,15 +73,18 @@ a{
     text-decoration: none;
 }
 .perfil{
-    width: 50%;
+    display: flex;
+    justify-content: center;
 
 }
 
 .perfil img{
-    width: 100%;
+    width: 60%;
     height: auto;
     border-radius: 20px;
-    position: relative
+    position: relative;
+
+
 }
 
 .midias{
@@ -85,16 +93,21 @@ a{
     width: 50%;
     justify-content: center;
 
+    
+
 }
 .bordatorta{
-    width: 465px;
-    height: 525px;
+    width: 30%;
+    margin-top: 30px;
+    height: 61%;
+    transform: translatex(30px);
     border-radius: 20px;
-    border: solid orange 4px;
+    border: solid #0c3a56 4px;
     position: absolute;
     z-index: -1;
-    margin-top: 20px;
-    margin-left: 20px;
+
+    
+
 }
 
 .ladoesquerdo{
@@ -118,7 +131,6 @@ p{
     margin-top: 0px;
     display: flex;
     align-items: center;
-
     font-family: "Rajdhani", sans-serif;
 }
 
@@ -127,8 +139,8 @@ p{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    position: relative;
-    justify-content: space-around;
+
+    justify-content: space-between;
     width: 100%;
     align-items: center;
 
@@ -139,25 +151,32 @@ footer{
     border-top: solid rgb(255, 132, 0) 3px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    height: auto;
-    margin: auto;
     align-items: center;
+    margin-top: auto;
+    height: auto;
     
 }
-
-footer #aluraicon{
-    margin-top: 40px;
-    height: 65px;
-}
-
-footer .assinatura{
+.conjuntofooter{
 
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    flex-direction: column;
+    height: 100%;
+}
+footer #aluraicon{
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+footer .assinatura{
+    display: flex;
+    justify-content: center;
     font-size: 20px;
-    margin-bottom: 20px;
+    padding: 20px;
+    font-family:"Rajdhani", sans-serif; ;
 }
 h2{
     display: flex;
@@ -249,6 +268,7 @@ ul2 li2 a{
 .myprojects{
     display: flex; 
     padding: 20px;
+    text-align: start;
 }
 
 
@@ -290,8 +310,8 @@ ul2 li2 a{
     height: 250px;
     border-radius: 20px;
     margin-top: 40px;
-    margin-right: 1040px;
-    border: solid orange 4px;
+    transform: translatex(20px);
+    border: solid #0c3a56 4px;
     position: absolute;
     z-index: -1;
 }
@@ -300,8 +320,8 @@ ul2 li2 a{
     height: 250px;
     border-radius: 20px;
     margin-top: 40px;
-    margin-right: 60px;
-    border: solid orange 4px;
+    transform: translatex(510px);
+    border: solid #0c3a56 4px;
     position: absolute;
     z-index: -1;
     margin-left: 20px;
@@ -313,8 +333,8 @@ ul2 li2 a{
     height: 250px;
     border-radius: 20px;
     margin-top: 40px;
-    margin-left: 960px;
-    border: solid orange 4px;
+    border: solid #0c3a56 4px;
+    transform: translatex(-480px);
     position: absolute;
     z-index: -1;
 }
@@ -330,10 +350,8 @@ ul2 li2 a{
         width: 100%;
     }
     .perfil img{
-        width: 80%;
+        width: 70%;
     }
-
-
     ul2 li2{
         width: 100%;
         margin: 0;
@@ -346,34 +364,29 @@ ul2 li2 a{
     ul2 li2 a{
         margin: 0;
     }
-
     .ladoesquerdo{
         width: 100vw;
         padding-inline: 20px;
     }
-
     p{
         width: 100%;
         text-align: center;
     }
-
     .bordatorta{
-        width: 80%;
-        height: 335px;
+        width: 70%;
+        height: 32%; 
+        margin-right: 20px;
 
     }
-
     .midias{
         display: flex;
         justify-content: center;
         width: 100%;
     }
-
     .apresentacao{
         gap: 30px; 
         padding-bottom: 60px;
     }
-
     .projetosimg{
         width: 80%;
         height: auto;
@@ -382,4 +395,64 @@ ul2 li2 a{
         width: 100%;
 
     }
+    .tecnologias img{
+        width: 365px;
+        height: 365px;
+    }
+    .bordaredonda{
+        width: 365px;
+        height: 365px;
+    }
+    .osprojetos{
+        width: 100%;
+        flex-direction: column;
+  
+    }
+    .midiasprojetos{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+
+        height: auto;
+        padding-bottom: 90px;
+    }
+    .projetosimg img{
+        width: 120%;
+        height: 200px;
+        display: flex;
+        border-radius: 10px;
+        border: solid rgba(255, 255, 255, 0.337) 2px;
+        position: relative;
+        z-index: 1;
+    }
+    .bordaprojetotorta1{
+        width: 75%;
+        height: 200px;
+        border-radius: 20px;
+        border: solid #0c3a56 4px;
+        position: absolute;
+        z-index: -1;
+    }
+    .bordaprojetotorta2{
+        width: 75%;
+        height: 200px;
+        border-radius: 20px;
+        transform: translatey(-302px);
+        margin-left: 39px;
+        border: solid #0c3a56 4px;
+        position: absolute;
+        z-index: -1;
+    }
+    .bordaprojetotorta3{
+        width: 75%;
+        height: 200px;
+        border-radius: 20px;
+        transform: translatey(300px);
+        margin-left: 39px;
+        border: solid #0c3a56 4px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    
   }
